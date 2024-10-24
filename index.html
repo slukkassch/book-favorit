@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books Favorit</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Romances</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Terror</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Aventura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ficção</a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Bora conhecer os meus livros favoritos?</h2>
+    <p class="banner__texto">Encontre em minha biblioteca tudo que você precisa saber sobre cada livro!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais procurados</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/harrypotteraecamarafria.jpg"
+            alt="Livro Harry Potter e a camara fria"></div>
+        <div class="swiper-slide"><img src="img/harrypotteraocalicedefogo.jpg"
+            alt="Livro Harry Potter e o calice de fogo."></div>
+        <div class="swiper-slide"><img src="img/harrypottereacriancaamaldicoada.jpg" 
+            alt="Livro Harry Potter e a criança almadiçoada">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/harrypottereaordemdafenix.jpg" 
+            alt="Livro Harry Potter e a ordem da fênix" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/harrypottereapedrafilosofal.jpg" 
+            alt="Livro Harry Potter ea pedra filosofal" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/harrypottereasreliquiasdamorte.jpg" 
+            alt="Livro Harry Potter e as reliquias da mortre" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse de me acompanhar nessa aventura na leitura...</h3>
+          <h2 class="descrição__titulo-livro">Beyond The Story: Uma história dos 10 anos de BTS</h2>
+          <p class="descrição__texto">
+            Conhecendo a história dos meninos do BTS.
+          </p>
+        </div>
+        <img src="img/livrodestaque.jpg" class="descrição__imagem"/>
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/jogosvorazes.jpg"
+            alt="Livro sobre Jogos vorazes"></div>
+        <div class="swiper-slide"><img src="img/jogosvorazesaesperanca.jpg" alt="Livro sobre Jogos vorazes">
+        </div>
+        <div class="swiper-slide"><img src="img/jogosvorazesemchamas.webp" alt="Livro sobre Jogos vorazes">
+        </div>
+        <div class="swiper-slide"><img src="img/guerracivil.jpg" alt="Livro GMarvel"></div>
+        <div class="swiper-slide"><img src="img/guerrassecretasmarvel.jpg" alt="Livro sobre Guerra"></div>
+        <div class="swiper-slide"><img src="img/heroispoderosos.jpg" alt="livro sobre Heróis"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autor preferido</h3>
+          <h2 class="descrição__titulo-livro">Stan Lee</h2>
+          <p class="descrição__texto">
+            Stanley Martin Lieber, mais conhecido como Stan Lee, foi um escritor, editor, publicitário, produtor, diretor, empresário e ator norte-americano.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/StanLee.jpg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais procurados</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/xmenfuturo.jpg"
+            alt="Livro Harry Potter e a camara fria"></div>
+        <div class="swiper-slide"><img src="img/xmen.jpg"
+            alt="Livro Harry Potter e o calice de fogo."></div>
+        <div class="swiper-slide"><img src="img/thor.jpg" 
+            alt="Livro Harry Potter e a criança almadiçoada">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/osvingadores.jpg" 
+            alt="Livro Harry Potter e a ordem da fênix" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/novosvingadores.jpg" 
+            alt="Livro Harry Potter ea pedra filosofal" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/marvelverse.jpg" 
+            alt="Livro Harry Potter e as reliquias da mortre" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por essa autora</h3>
+          <h2 class="descrição__titulo-livro">Suzanne Collins</h2>
+          <p class="descrição__texto">
+            Suzanne Marie Collins (Hartford, 10 de agosto de 1962) é uma escritora e roteirista de ficção científica e literatura infanto-juvenil americana, conhecida pela trilogia Jogos Vorazes que virou filme sob título homônimo em 2012. Seus livros já venderam mais de 85 milhões de cópias no mundo todo.
+          </p>
+        </div>
+        <img src="img/autoradejogosvorazes.jpg" class="descrição__imagem"/>
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS MAIS VISITADOS</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Aventuras</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Ficção</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Romances</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Contos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros infantis</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Gibis</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros infantis</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Biografias e autobiografias</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novas leituras!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo books favorit</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
